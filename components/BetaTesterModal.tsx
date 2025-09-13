@@ -138,18 +138,6 @@ export default function BetaTesterModal({
     }
   };
 
-  const resetForm = () => {
-    setEmail("");
-    setName("");
-    setCompany("");
-    setPhone("");
-    setError("");
-    setSuccess(false);
-    setShowSurvey(false);
-    setValidationErrors({});
-    setIsLoading(false);
-  };
-
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
       <DialogOverlay className="bg-black/20 backdrop-blur-md" />
@@ -167,7 +155,7 @@ export default function BetaTesterModal({
                 Application Submitted!
               </h3>
               <p className="text-sm text-slate-600">
-                Beta testing is exclusive and spots are limited. We'll review
+                Beta testing is exclusive and spots are limited. We&apos;ll review
                 your application and contact selected candidates within 24-48
                 hours.
               </p>
@@ -177,9 +165,9 @@ export default function BetaTesterModal({
               <DialogHeader className="text-center mb-3">
                 <div className="flex items-center justify-center space-x-2 mb-3">
                   <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2F7e177c37fa6e47b3b9bfc0025bfe2ce3%2Fa468cc2b6d3c4ce7b7418bd162fd0b02?format=webp&width=800"
+                    src="/logo.webp"
                     alt="Proply"
-                    className="w-8 h-8"
+                    className="w-12 h-12"
                   />
                   <span className="text-lg font-bold text-slate-900 tracking-tight">
                     Proply
@@ -356,7 +344,7 @@ export default function BetaTesterModal({
                   </form>
 
                   <p className="text-xs text-slate-500 text-center mt-2 leading-relaxed">
-                    Beta testing spots are limited. We'll review your
+                    Beta testing spots are limited. We&apos;ll review your
                     application and contact you within 24-48 hours.
                   </p>
                 </>
@@ -429,7 +417,7 @@ export default function BetaTesterModal({
                           </>
                         ) : (
                           <>
-                            I've Completed the Survey
+                            I&apos;ve Completed the Survey
                             <CheckCircle className="ml-2 h-4 w-4" />
                           </>
                         )}

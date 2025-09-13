@@ -113,10 +113,10 @@ export default function AuthModal({ isOpen, onClose }: AuthModalProps) {
                 <CheckCircle className="h-6 w-6 text-green-600" />
               </div>
               <h3 className="text-lg font-semibold text-slate-900 mb-2">
-                You're on the list!
+                You&apos;re on the list!
               </h3>
               <p className="text-sm text-slate-600">
-                We'll notify you when Proply is ready for early access.
+                We&apos;ll notify you when Proply is ready for early access.
               </p>
             </div>
           ) : (

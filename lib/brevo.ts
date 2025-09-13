@@ -5,16 +5,6 @@ interface BrevoContactData {
   listIds?: number[];
 }
 
-interface BrevoApiPayload {
-  email: string;
-  attributes: {
-    USERNAME: string;
-    COMPANY: string;
-  };
-  listIds: number[];
-  updateEnabled: boolean;
-}
-
 const DEFAULT_BREVO_API = process.env.BREVO_API_KEY!;
 const DEFAULT_BREVO_LIST_ID = Number(process.env.BREVO_LIST_ID!);
 
